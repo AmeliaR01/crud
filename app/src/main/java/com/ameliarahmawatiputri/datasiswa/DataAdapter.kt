@@ -14,6 +14,8 @@ class DataAdapter (val data: List<DataItem>?, private val click: onClickItem) :
         return MyHolder(view)
     }
 
+
+
     override fun getItemCount() = data?.size ?: 0
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
